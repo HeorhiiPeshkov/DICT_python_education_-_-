@@ -1,0 +1,279 @@
+Index: .venv/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>idea*.txt\r\n.idea\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.venv/.gitignore b/.venv/.gitignore
+--- a/.venv/.gitignore	(revision a040cf861327b9566ce2d1c3f016d511d49a4cf6)
++++ b/.venv/.gitignore	(date 1729258611882)
+@@ -1,2 +1,2 @@
+-idea*.txt
++*.txt
+ .idea
+Index: zoo/zoo.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/zoo/zoo.py b/zoo/zoo.py
+new file mode 100644
+--- /dev/null	(date 1729258433462)
++++ b/zoo/zoo.py	(date 1729258433462)
+@@ -0,0 +1,154 @@
++print ("I love animals!\nLet's check out the animals...\nThe deer looks fine.\nThe lion looks healthy.")
++camel = input("Please, write animal you want.\n>")
++print (r""""The camel habitat...
++ ___.-''''-.
++/___ @      |
++',,,,.      |        _.'''''''._
++       '    |      /             \
++       |     \ _.-'               \
++       |                           '.-' '-.
++       |                                   ',
++       |                                     '',
++        ',,-, ':                                ;
++                 ',,| ;,,                    ,';;
++                    ! ; !'',,,',  ',,,,'  ! ;  ;:
++                    : ;    ! !      ! !   ; ;  :;
++                    ; ;    ! !      ! !   ; ;  ;,
++                    ; ;    ! !      ! !   ; ;
++                    ; ;    ! !      ! !   ; ;
++                    ;,,    !,!      !,!   ;,;
++                    /_I    L_I      L_I   /_I
++Look at that!""")
++print ("I love animals!\nLet's check out the animals...\nThe deer looks fine.\nThe lion looks healthy.")
++animals = ["camel", "lion", "deer", "goose", "bat", "rabbit"]
++animals[0] = (r"""The camel habitat...
++ ___.-''''-.
++/___ @      |
++',,,,.      |        _.'''''''._
++       '    |      /             \
++       |     \ _.-'               \
++       |                           '.-' '-.
++       |                                   ',
++       |                                     '',
++        ',,-, ':                                ;
++                 ',,| ;,,                    ,';;
++                    ! ; !'',,,',  ',,,,'  ! ;  ;:
++                    : ;    ! !      ! !   ; ;  :;
++                    ; ;    ! !      ! !   ; ;  ;,
++                    ; ;    ! !      ! !   ; ;
++                    ; ;    ! !      ! !   ; ;
++                    ;,,    !,!      !,!   ;,;
++                    /_I    L_I      L_I   /_I
++Look at that!""""")
++animals[1] = (r""""The rabbit habitat...
++           ,
++          /|       __
++         / |     ,-~/
++        Y :|   // /
++        | jj  /(.^
++        >- ~  -v
++       /        Y
++      jo   o    |
++     ( ~T~      j
++       >._-  _./
++       /  ~    |
++      Y _,     |
++    /  | ;- ~ _ l
++   / l/   ,- ~  \
++   \//\/.-       \
++    Y           /Y
++    l        I   !
++    ]\       _\ /\
++   (  ~----  ~ Y. )
++It looks fine!""")
++animals[2] = (r""""The lion habitat...
++                                                              ,w.
++                                                             ,YWMMw ,M ,
++                                         _.---.._ __..---._.'MMMMMw,wMWmW,
++                                  _. - ""        '''           YP"WMMMMMMMMMb,
++       .-'                    __.'                          .'        MMMMW^WMMMM;
++            _, .'.-'"         ; `,                 /`  .--""        :MMM[==MWMW^;
++                   ,mM^" ,-'.'; ;                / ,               MMMMb_wMW" @\
++       ,MM:. .'.-' .'         ; `\               ; `,                  MMMMMMMW `"=./`-,
++   WMMm__,-'.'                / _.\              F'''       -+,, ;_,_.dMMMMMMMM[,_ / `=_}
++"^MP__.-' ,-' _.--"" `-, ;         \             ;  ;       MMMMMMMMMMW        ^``; __|
++                / .' ; ;            ) )          `{ \                 `"^W^`,       \ :
++               / .' /                             ( .' /                   Ww._ `. `"
++              / Y, `, `-,=,                       _{ ;                MMMP`""-,`-._.-,
++              (--, ) `                      ,_ / `) \/"") ^" `-, -                 ;"\:
++The lion is roaring!""")
++animals[3] = (r""""
++The deer habitat...
++      /|      |\
++   `__\\      //__
++      ||      ||
++   \__`\      | __/
++    `_ \\    //_
++      _.,:---;,._
++      \_:     :_/
++        |@. .@|
++        |     |
++        ,\.-./ \
++        ;;`-  `---__________-----.-.
++        ;;;                       \_\
++         ;;;                        |
++         ;    |                     ;
++          \    \    \         |    /
++           \_,  \   /         \   |\
++             | ;|   |,,,,,,,,/\  \  \_
++             |  |   |          \   / |
++             \  \   |          | / \ |
++              | | | |          | | | |
++              | | | |          | | | |
++              | | | |          | | | |
++              |_| |_|          |_| |_|
++              /_/ /_/          /_/ /_/
++Pretty good!""")
++animals[4] = (r""""
++The goose habitat...
++                             ,- - --.
++                           ,'  ____  `.
++                         ,' ,'      `. `._
++   (`.      _..--.._   ,' ,'          \  \
++  (`-.\ .-            '  /            ( d _b
++ (`._      `-       ,._ (             `-(   \
++<_ `       ( <`<         \               `-._\
++ <`-        (__< <        :
++  (__        (_<_<        ;
++`------------------------------------------
++Beautiful!""")
++animals[5] = (r"""
++The bat habitat...
++_________________               _________________
++~-.              \   |\___/|   /              .-~
++   ~-.            \ /  o o  \ /            .-~
++      >            \\   W   //            <
++     /              / ~---~ \              \
++    /_             |         |             _\ 
++      ~-.          |         |          .-~
++        ;           \       /           i
++/___         /\     /\         ___\
++           ~-.     /  \___/  \     .-~
++               \  /           \  /
++                v               v
++It's doing fine.""")
++while True:
++    animalyw = input("Please enter the number of the habitat you would like to view: >")
++    if animalyw == "0":
++        print(animals[0])
++    elif animalyw == "1":
++        print(f"{animals[1]}")
++    elif animalyw == "2":
++        print(f"{animals[2]}")
++    elif animalyw == "3":
++        print(f"{animals[3]}")
++    elif animalyw == "4":
++        print(f"{animals[4]}")
++    elif animalyw == "5":
++        print(f"{animals[5]}")
++    elif animalyw == "exit":
++        print("See you later!")
++        break
++    else:
++        print("There's no animal at this number. Try again")
++        anymalyw = int(input(">"))
+Index: Chatbot/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Chatbot/.gitignore b/Chatbot/.gitignore
+new file mode 100644
+--- /dev/null	(date 1729258433460)
++++ b/Chatbot/.gitignore	(date 1729258433460)
+@@ -0,0 +1,2 @@
++*.txt
++.idea
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5b868581-0fe1-42b6-89ad-5dc403346698\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2meFPbl1REPHqvIeC0DtByZjpnh\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"Rebasing dev\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5b868581-0fe1-42b6-89ad-5dc403346698\" name=\"Changes\" comment=\"\" />\r\n      <created>1727429111450</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1727429111450</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a040cf861327b9566ce2d1c3f016d511d49a4cf6)
++++ b/.idea/workspace.xml	(date 1729258641546)
+@@ -5,7 +5,15 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="5b868581-0fe1-42b6-89ad-5dc403346698" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/Chatbot/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Chatbot/hangman/hangman.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/chatbot/chatbot.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/hangman/hangman.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/zoo/zoo.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.venv/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/.gitignore" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Chatbot/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chatbot/chatbot.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -27,7 +35,7 @@
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "Rebasing dev"
++    "git-widget-placeholder": "Merging dev"
+   }
+ }]]></component>
+   <component name="SharedIndexes">
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.12 (pythonProjectEE)\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision a040cf861327b9566ce2d1c3f016d511d49a4cf6)
++++ b/.idea/misc.xml	(date 1729258433459)
+@@ -1,4 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="Black">
++    <option name="sdkName" value="Python 3.12 (pythonProjectEE)" />
++  </component>
+   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (pythonProjectEE)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: Chatbot/chatbot.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Chatbot/chatbot.py b/Chatbot/chatbot.py
+--- a/Chatbot/chatbot.py	(revision a040cf861327b9566ce2d1c3f016d511d49a4cf6)
++++ b/Chatbot/chatbot.py	(date 1729258433461)
+@@ -1,0 +1,21 @@
++print("Hello! My name is Practice3_Chat_Bot.\nI was created in 2024")
++your_name = input("Please, remind me your name.\n>")
++print(f"What a great name you have, {your_name}!")
++print("Let me guess your age.\nEnter remainders of dividing your age by 3, 5 and 7.")
++reminder3 = int(input(">"))
++reminder5 = int(input(">"))
++reminder7 = int(input(">"))
++your_age = (reminder3*70 + reminder5*21 + reminder7*15)%105
++print(f"Your age is {your_age}; that's a good time to start programming!")
++number = int(input("Now I will prove to you that I can count to any number you want.\n>"))
++i = 0
++while i <= number:
++    print(f"{i}!")
++    i = i+1
++print("Who performs main character in Titanic?")
++question = int(input("1. Robert De Niro.\n2. Leonardo Dicaprio.\n3. Johny Depp.\n4. Tom Hardy.\n>"))
++while question != 2:
++    print("Please, try again!")
++    question = int(input(">"))
++print("Completed!")
++print("Congratulations, have a nice day!")
+\ No newline at end of file
+diff --git a/Chatbot/hangman/hangman.py b/Chatbot/hangman/hangman.py
+new file mode 100644
+diff --git a/hangman/hangman.py b/hangman/hangman.py
+new file mode 100644
